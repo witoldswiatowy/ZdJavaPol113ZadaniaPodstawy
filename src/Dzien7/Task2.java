@@ -27,7 +27,8 @@ public class Task2 {
         return CircumferenceOfACircle;
     }
     private static float AreaOfACircle (float radius){
-        float AreaOfACircle = (float) Math.PI * (radius * radius);
+//        float AreaOfACircle = (float) Math.PI * (radius * radius);
+        float AreaOfACircle = (float) (Math.PI * Math.pow(radius,2));
         return AreaOfACircle;
     }
 }
