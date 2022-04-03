@@ -6,11 +6,15 @@ public class Task14 {
     public static void main(String[] args) {
 
         int [] inputs = {12,-7,19,-5};
-        int [] newArray = arrayOfMinusValue(inputs);
+        if (numberOfMinus(inputs) != 0) {
+            int[] newArray = arrayOfMinusValue(inputs);
 //        int [] newArray = createNewArray(inputs); coś nie tak tu jest
-        writer(newArray);
-        System.out.println(Arrays.toString(newArray)); // nie trzeba pisać dodatkowo metody do wyświetlenia
-
+            writer(newArray);
+            System.out.println(Arrays.toString(newArray)); // nie trzeba pisać dodatkowo metody do wyświetlenia
+        }
+        else{
+            System.out.println("Brak minusow");
+        }
     }
 
     private static void createNewArray (int [] inputs){
