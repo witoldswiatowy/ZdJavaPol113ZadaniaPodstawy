@@ -13,7 +13,8 @@ public class Task1 {
     }
 
     private static char getLastChar (String word){
-        if (word != null && !word.isBlank()) {
+//        if (word != null && !word.isBlank()) {
+        if (StringHelper.isValid(word)) {
             char lastChar = word.charAt(word.length() - 1);
             return lastChar;
         }
