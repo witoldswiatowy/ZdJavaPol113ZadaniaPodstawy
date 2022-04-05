@@ -30,7 +30,7 @@ public class Task10 {
                     arrayOfStrings[i] = scanner.nextLine();
                     counter++;
                     if (counter == 9){
-                        System.out.println("Przerywam program");
+                        System.out.println("Dziesięć nieudanych prób. Przerywam program");
                         break;
                     }
                 }while (arrayOfStrings[i].equals(""));
@@ -39,15 +39,16 @@ public class Task10 {
     return arrayOfStrings;
     }
 
-    private static void specialWriter (String [] arrayOfStrings){
+    private static String specialWriter (String [] arrayOfStrings){
         for (int i = 0; i < arrayOfStrings.length; i++){
             if (arrayOfStrings[i].equals("")){
-                break;
-            }
-            System.out.print("Result: ");
-            for (String insert : arrayOfStrings) {
-                System.out.print(insert.charAt(insert.length()-1));
+                return "Error";
             }
         }
+        System.out.print("Result: ");
+        for (String insert : arrayOfStrings) {
+            System.out.print(insert.charAt(insert.length() - 1));
+        }
+        return "";
     }
 }
