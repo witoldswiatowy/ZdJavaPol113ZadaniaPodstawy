@@ -23,9 +23,10 @@ public class Author {
 
     @Override
     public String toString() {
-        return "Author{" +
-                "surname='" + surname + '\'' +
-                ", nationality='" + nationality + '\'' +
-                '}';
+        final StringBuilder sb = new StringBuilder("Author{");
+        sb.append("surname='").append(surname).append('\'');
+        sb.append(", nationality='").append(nationality).append('\'');
+        sb.append('}');
+        return sb.toString();
     }
 }
