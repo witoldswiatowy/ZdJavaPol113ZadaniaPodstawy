@@ -26,4 +26,3 @@ public class Task5prowadzacego {
         System.out.println("Total time: " + durationInSec2 + " sec");
     }
 }
-}
