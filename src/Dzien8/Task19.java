@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Taks19 {
+public class Task19 {
     public static void main(String[] args) {
 
         int [][] arrayOfInts1 = arrayDoubleOfIntsGenerator();
