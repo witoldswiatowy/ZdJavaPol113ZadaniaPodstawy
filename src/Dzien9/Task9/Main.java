@@ -19,6 +19,7 @@ public class Main {
         order.addItem(orderItem3);
         order.addItem(orderItem4);
 //        order.addItem(orderItem5);
+        order.printOrder(order);
 
     }
 }

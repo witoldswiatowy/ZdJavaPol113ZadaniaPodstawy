@@ -25,6 +25,12 @@ public class Order {
        return true;
    }
 
+    public void printOrder (Order orders){
+       for (int i = 0; i < orders.maxOrderItem; i++){
+           orderItems[i].print();
+       }
+    }
+
 
 
 }
