@@ -5,6 +5,11 @@ import Dzien8.StringHelper;
 public class OrderItem {
     private static final String SEPARATOR = "\t|\t";
     private String productName;
+
+    public int getQuntity() {
+        return quntity;
+    }
+
     private int quntity;
     private double price;
 

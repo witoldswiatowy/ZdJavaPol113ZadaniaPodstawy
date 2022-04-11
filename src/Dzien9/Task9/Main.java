@@ -20,6 +20,8 @@ public class Main {
         order.addItem(orderItem4);
 //        order.addItem(orderItem5);
         order.printOrder(order);
+        System.out.println(order.getTotalAmount());
+        System.out.println(order.getTotalCount());
 
     }
 }

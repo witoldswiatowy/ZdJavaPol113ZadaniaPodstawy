@@ -31,14 +31,21 @@ public class Order {
        }
     }
 
-    public double getTotalAmount (Order orders){
-       for (int i = 0; i < orders.maxOrderItem; i++){
-           orderItems[i].getAmount();
-
+    public double getTotalAmount (){
+       int totalAmount = 0;
+       for (int i = 0; i < maxOrderItem; i++){
+           totalAmount += orderItems[i].getAmount();
        }
-       return -1;
+       return totalAmount;
     }
 
+    public double getTotalCount (){
+       int totalCount = 0;
+       for (int i = 0; i < maxOrderItem; i++){
+           totalCount += orderItems[i].getQuntity();
+       }
+       return totalCount;
+    }
 
 
 }
