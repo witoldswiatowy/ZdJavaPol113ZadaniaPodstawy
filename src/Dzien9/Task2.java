@@ -1,3 +1,5 @@
+package Dzien9;
+
 import java.util.regex.Pattern;
 
 public class Task2 {
