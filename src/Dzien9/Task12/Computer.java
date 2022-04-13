@@ -1,7 +1,7 @@
 package Dzien9.Task12;
 
 public class Computer {
-    public Computer() {
+    public Computer(Processor processor, Memory memory, ExternalPort externalPort) {
     }
 
     public class Processor{
@@ -17,9 +17,19 @@ public class Computer {
         private int memory;
         private String producer;
         private String type;
+
+        public Memory(int memory, String producer, String type) {
+            this.memory = memory;
+            this.producer = producer;
+            this.type = type;
+        }
     }
     public static class ExternalPort {
         private String type;
+
+        public ExternalPort(String type) {
+            this.type = type;
+        }
     }
 
 }

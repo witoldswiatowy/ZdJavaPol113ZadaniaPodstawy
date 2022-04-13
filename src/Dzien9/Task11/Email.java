@@ -7,6 +7,6 @@ public class Email {
     private String attachment;
 
     private class Builder{
-
+        Email email = new Email();
     }
 }
