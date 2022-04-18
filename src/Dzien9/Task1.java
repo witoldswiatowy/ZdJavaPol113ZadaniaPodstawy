@@ -20,6 +20,7 @@ public class Task1 {
         a+ -> one or more
         \d -> dowolna cyfra
         \w -> dowolna litera
+        {2} -> muszą być 2 te znaki
          */
 
         /*
