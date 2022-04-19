@@ -32,47 +32,49 @@ public class Task4 {
             }*/
 
         StringBuilder firstLine = new StringBuilder();
-        StringBuilder secondLine = new StringBuilder().append(" ");
-        StringBuilder thirdLine = new StringBuilder().append("  ");
-        StringBuilder fourthLine = new StringBuilder().append("   ");
-        String oneElement = "*    ";
-        String twoElement = "    *";
+        StringBuilder secondLine = new StringBuilder();
+        StringBuilder thirdLine = new StringBuilder();
+        StringBuilder fourthLine = new StringBuilder();
+        String starElement = "*";
+        String space1Element = " ";
+        String space2Element = "  ";
+        String space3Element = "   ";
+        String space4Element = "    ";
 
             int number = 1;
         for (int i = 0; i < trailLength; i++){
             switch (number){
                 case 1:
-                    firstLine.append(oneElement);
+                    firstLine.append(starElement).append(space3Element);
                     number = 2;
                     continue;
                 case 2:
-                    secondLine.append(oneElement);
+                    secondLine.append(space1Element).append(starElement).append(space2Element);
                     number = 3;
                     continue;
                 case 3:
-                    thirdLine.append(oneElement);
+                    thirdLine.append(space2Element).append(starElement).append(space1Element);
                     number = 4;
                     continue;
                 case 4:
-                    fourthLine.append(oneElement);
+                    fourthLine.append(space3Element).append(starElement);
                     number = 5;
                     continue;
                 case 5:
-                    fourthLine.append(twoElement);
+                    fourthLine.append(starElement).append(space3Element);
                     number = 6;
                     continue;
                 case 6:
-                    thirdLine.append(twoElement);
+                    thirdLine.append(space1Element).append(starElement).append(space2Element);
                     number = 7;
                     continue;
                 case 7:
-                    secondLine.append(twoElement);
+                    secondLine.append(space2Element).append(starElement).append(space1Element);
                     number = 8;
                     continue;
                 case 8:
-                    firstLine.append(twoElement);
+                    firstLine.append(space3Element).append(starElement);
                     number = 1;
-                    continue;
             }
         }
         System.out.println(firstLine);
